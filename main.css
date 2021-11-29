@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  background-color: #c1c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+header h1 {
+  letter-spacing: 2px;
+  font-family: "Press Start 2P";
+  color: blue;
+}
+
+.top-sect {
+  min-width: 90%;
+  min-height: 15vh;
+  margin-top: 10px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 2vh;
+  -webkit-box-shadow: 0 0 20px #ebebeb;
+          box-shadow: 0 0 20px #ebebeb;
+}
+
+.top-sect .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+  -webkit-box-shadow: 0 0 15px #d5d5d5;
+          box-shadow: 0 0 15px #d5d5d5;
+  border-radius: 20px;
+  height: 50px;
+  width: 50%;
+  padding-right: 15px;
+}
+
+.top-sect .search-box-input {
+  border: none;
+  border-bottom: 3px solid;
+  width: 90%;
+  font-family: "Press Start 2P";
+}
+
+.top-sect .search-box-input:focus {
+  outline: none;
+}
+
+.top-sect .search-box-input:focus ~ .search-box-icon i {
+  font-size: x-large;
+}
+
+.top-sect .search-box-icon {
+  width: 7%;
+}
+
+.top-sect .search-box-icon i {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.top-sect .categories-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 28%;
+}
+
+.top-sect .categories-box-category {
+  min-width: 100px;
+  background-color: white;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 5px #9797f7;
+          box-shadow: 0 0 5px #9797f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  margin: 2%;
+  min-width: 150px;
+  position: relative;
+}
+
+.top-sect .categories-box-category .wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+}
+
+.top-sect .categories-box-category span {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Press Start 2P";
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 10px;
+}
+
+.top-sect .categories-box-category span i {
+  padding-left: 6px;
+  font-size: 20px;
+}
+
+.top-sect .categories-box-category:hover {
+  background-color: blue;
+}
+
+.top-sect .categories-box-category .input-number-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5px;
+}
+
+.top-sect .categories-box-category .input-number-container #max-gif-input {
+  width: 50px;
+  margin: auto;
+  border: none;
+  border-bottom: 1px dashed;
+  font-size: 16px;
+  text-align: center;
+}
+
+.top-sect .categories-box-category .input-number-container #max-gif-input:focus {
+  outline: none;
+}
+
+.top-sect .categories-box-category.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top-sect .categories-box-category.more .fas {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  right: 7px;
+}
+
+.gifs-sect {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.gifs-sect .gif-card {
+  height: 250px;
+  background-color: #dddddd;
+  -webkit-box-shadow: 0 0 25px #4a4a90;
+          box-shadow: 0 0 25px #4a4a90;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.gifs-sect .gif-card .gif-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 100%;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  display: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+  background: linear-gradient(transparent, black);
+}
+
+.gifs-sect .gif-card .gif-wrapper .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  bottom: 20px;
+}
+
+.gifs-sect .gif-card .gif-wrapper .btn-container .wrapper-btn {
+  color: black;
+  display: block;
+  background-color: white;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+.gifs-sect .gif-card .gif-wrapper .btn-container .wrapper-btn i {
+  margin: auto;
+}
+
+.gifs-sect .gif-card:hover {
+  -webkit-box-shadow: 0 0 25px 10px #4a4a90;
+          box-shadow: 0 0 25px 10px #4a4a90;
+}
+
+.gifs-sect .gif-card:hover .gif-wrapper {
+  right: 0%;
+  display: block;
+}
+
+.gifs-sect .gif-card .gif {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.active-category {
+  background-color: blue !important;
+}
+
+@-webkit-keyframes wrapper {
+  from {
+    right: 100%;
+    display: none;
+  }
+  to {
+    right: 0;
+    display: block;
+  }
+}
+
+@keyframes wrapper {
+  from {
+    right: 100%;
+    display: none;
+  }
+  to {
+    right: 0;
+    display: block;
+  }
+}
+
+* {
+  font-family: 'Press Start 2P';
+}
+/*# sourceMappingURL=main.css.map */

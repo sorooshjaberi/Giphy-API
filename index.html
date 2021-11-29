@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>GIPHY</title>
+  </head>
+  <body>
+      <header>
+          <h1>GifBoy.com</h1>
+      </header>
+    <!-- start top sect -->
+    <section class="top-sect">
+      <div class="search-box">
+          <input type="text" class="search-box-input" placeholder="Search GIF ..." />
+          <div class="search-box-icon">
+            <i class="fas fa-search fa-flip-horizontal"></i>
+          </div>
+      </div>
+      <div class="categories-box">
+        <div class="categories-box-category trend" >
+          <div class="wrapper" data-category='trending'></div>
+          <span>Trends<i class="fas fa-chart-line"></i></span> </i>
+        </div>
+        <div class="categories-box-category more">
+          <div class="wrapper" data-category='random'></div>
+          <span>Random</span>
+          <i class="fas fa-dice"></i>
+        </div>
+        <div class="categories-box-category limit-box "  data-category='limit'>
+          <span>Max gifs</span>
+          <div class="input-number-container">
+            <input type="number" class="limit" id="max-gif-input" value="10">
+          </div>
+        </div>
+        <div class="categories-box-category more" style="display: none;" >  
+          <span>More</span>
+          <i class="fas fa-arrow-down"></i>
+          <div class="more-categories">
+            
+          </div>
+        </div>
+    </section>
+    <!-- end top sect -->
+    <!-- start gif sect -->
+    <section class="gifs-sect"></section>
+    <!-- end gif sect -->
+    <!-- start foot sect -->
+    <section class="gifs-footer"></section>
+    <!-- end foot sect -->
+    <script src="app.js"></script>
+  </body>
+</html>

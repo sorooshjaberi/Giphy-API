@@ -1,0 +1,13 @@
+.active-category{
+    background-color: blue !important;
+}
+@keyframes wrapper {
+    from{
+        right: 100%;
+        display: none;
+    }
+    to{
+        right: 0;
+        display: block;
+    }
+}
