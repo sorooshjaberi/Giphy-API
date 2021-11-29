@@ -153,7 +153,6 @@ header h1 {
 }
 
 .top-sect .categories-box-category span i {
-  padding-left: 6px;
   font-size: 20px;
 }
 
@@ -166,7 +165,6 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 5px;
 }
 
 .top-sect .categories-box-category .input-number-container #max-gif-input {
@@ -176,6 +174,7 @@ header h1 {
   border-bottom: 1px dashed;
   font-size: 16px;
   text-align: center;
+  margin-right: 4px;
 }
 
 .top-sect .categories-box-category .input-number-container #max-gif-input:focus {
@@ -202,7 +201,7 @@ header h1 {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  right: 7px;
+  right: 25px;
 }
 
 .gifs-sect {
@@ -314,9 +313,5 @@ header h1 {
     right: 0;
     display: block;
   }
-}
-
-* {
-  font-family: 'Press Start 2P';
 }
 /*# sourceMappingURL=main.css.map */
