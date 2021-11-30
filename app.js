@@ -58,6 +58,12 @@ searchInput.addEventListener("blur", (e) => {
     categories.querySelector(".trend").classList.add("active-category");
   }
 });
+document.querySelector(".ball").addEventListener("click", () => {
+  console.log(5);
+  document.querySelector(".ball").classList.toggle('right-ball');
+  document.querySelector(".ball").classList.toggle('left-ball');
+  document.body.classList.toggle("dark-scheme");
+});
 // function
 function urlMakerCategories(category) {
   return mainUrl + category + apiKey;

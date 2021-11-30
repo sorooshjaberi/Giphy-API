@@ -1,13 +1,15 @@
+$bodyBgColor:rgb(193, 193, 193);
 .active-category{
     background-color: blue !important;
 }
-@keyframes wrapper {
-    from{
-        right: 100%;
-        display: none;
-    }
-    to{
-        right: 0;
-        display: block;
-    }
+.dark-scheme{
+    $bodyBgColor:rgb(34, 34, 34) ;
+    background-color: $bodyBgColor;
+}
+
+.right-ball{
+    right: 0 ;
+}
+.left-ball{
+    left: 0;
 }

@@ -1,3 +1,19 @@
+.active-category {
+  background-color: blue !important;
+}
+
+.dark-scheme {
+  background-color: #222222;
+}
+
+.right-ball {
+  right: 0;
+}
+
+.left-ball {
+  left: 0;
+}
+
 body {
   margin: 0;
   background-color: #c1c1c1;
@@ -14,6 +30,37 @@ body {
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
+}
+
+.scheme {
+  width: 90px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.scheme-changer {
+  width: 90px;
+  height: 20px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.scheme-changer .ball {
+  background: blue;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  position: absolute;
+  top: -10px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.scheme-changer .ball:hover {
+  cursor: pointer;
 }
 
 header h1 {
@@ -366,31 +413,5 @@ header h1 {
   bottom: 2px;
   text-align: center;
   width: 100%;
-}
-
-.active-category {
-  background-color: blue !important;
-}
-
-@-webkit-keyframes wrapper {
-  from {
-    right: 100%;
-    display: none;
-  }
-  to {
-    right: 0;
-    display: block;
-  }
-}
-
-@keyframes wrapper {
-  from {
-    right: 100%;
-    display: none;
-  }
-  to {
-    right: 0;
-    display: block;
-  }
 }
 /*# sourceMappingURL=main.css.map */
