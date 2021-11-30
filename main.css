@@ -40,6 +40,10 @@ header h1 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 2vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   -webkit-box-shadow: 0 0 20px #ebebeb;
           box-shadow: 0 0 20px #ebebeb;
 }
@@ -287,6 +291,81 @@ header h1 {
   margin: auto;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.footer-sect {
+  width: 100%;
+  margin-top: 20px;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(gray), to(#6c6c6c));
+  background: linear-gradient(gray, #6c6c6c);
+  position: relative;
+}
+
+.footer-sect .me {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-sect .me p {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 20px;
+  color: white;
+  text-shadow: white 0 0 5px;
+}
+
+.footer-sect .me p::first-letter {
+  font-size: 55px;
+}
+
+.footer-sect .me .social {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: 20px;
+}
+
+.footer-sect .me .social span {
+  width: 50px;
+  font-size: 50px;
+}
+
+.footer-sect .me .social span:hover {
+  cursor: pointer;
+  color: white !important;
+}
+
+.footer-sect .copy-right {
+  position: absolute;
+  bottom: 2px;
+  text-align: center;
+  width: 100%;
 }
 
 .active-category {
